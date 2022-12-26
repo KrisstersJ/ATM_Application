@@ -1,0 +1,215 @@
+﻿<Window x:Class="ATM_Application.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM_Application"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="650" Width="600" Loaded="Window_Loaded">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF556270"/>
+                <GradientStop Color="#FFFF6B6B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBlock x:Name="IntBank" HorizontalAlignment="Left" Margin="9,34,0,0" TextWrapping="Wrap" Text="International bank" VerticalAlignment="Top" FontSize="55" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+
+        <Image x:Name="A6" HorizontalAlignment="Left" Height="40" Margin="20,302,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-269.968"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A5" HorizontalAlignment="Left" Height="40" Margin="20,232,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-269.519"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A8" HorizontalAlignment="Left" Height="40" Margin="20,442,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-270.337"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A7" HorizontalAlignment="Left" Height="40" Margin="20,372,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-270.274"/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A4" HorizontalAlignment="Left" Height="40" Margin="529,442,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A3" HorizontalAlignment="Left" Height="40" Margin="529,372,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A2" HorizontalAlignment="Left" Height="40" Margin="529,302,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="A1" HorizontalAlignment="Left" Height="40" Margin="529,232,0,0" VerticalAlignment="Top" Width="42" Source="/triangle-png (1).png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Button x:Name="Withdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="366,222,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="Withdraw_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="73,432,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="Exit_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_50D" Content="50$" HorizontalAlignment="Left" Margin="73,362,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="_50D_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_20D" Content="20$" HorizontalAlignment="Left" Margin="73,292,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="_20D_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_10D" Content="10$" HorizontalAlignment="Left" Margin="73,222,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="_10D_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Transactions" Content="Transactions" HorizontalAlignment="Left" Margin="366,432,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="23" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="Transactions_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Deposit" Content="Deposit" HorizontalAlignment="Left" Margin="366,362,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="Deposit_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Balance" Content="Balance" HorizontalAlignment="Left" Margin="366,292,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="Balance_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

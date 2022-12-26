@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Designcontest-Ecommerce-Business-Atm-money.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="delete-error-exit-remove-stop-x-cross-icon--28.png" />
+    <None Remove="triangle-png %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Designcontest-Ecommerce-Business-Atm-money.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="delete-error-exit-remove-stop-x-cross-icon--28.png" />
+    <Resource Include="triangle-png (1).png" />
+  </ItemGroup>
+
+</Project>

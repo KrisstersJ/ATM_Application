@@ -1,0 +1,53 @@
+﻿<Window x:Class="ATM_Application.Action"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM_Application"
+        mc:Ignorable="d"
+        Title="Action" Height="650" Width="600">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF556270"/>
+                <GradientStop Color="#FFFF6B6B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBlock x:Name="IntBank" HorizontalAlignment="Left" Margin="9,34,0,0" TextWrapping="Wrap" Text="International bank" VerticalAlignment="Top" FontSize="55" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+        <Rectangle HorizontalAlignment="Left" Height="217" Margin="109,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="369"/>
+        <TextBlock HorizontalAlignment="Left" Margin="131,177,0,0" TextWrapping="Wrap" Text="Action Succsesful" VerticalAlignment="Top" FontSize="60" FontFamily="Arial Rounded MT Bold" Height="197" Width="389" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="330,381,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="25" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="Exit_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="BckMM" Content="Back to menu" HorizontalAlignment="Left" Margin="112,380,0,0" VerticalAlignment="Top" Height="60" Width="154" FontSize="22" FontFamily="Arial Rounded MT Bold" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" Click="BckMM_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C5364"/>
+                    <GradientStop Color="#FF0F2027" Offset="1"/>
+                    <GradientStop Color="#FF203A43" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+    </Grid>
+</Window>
